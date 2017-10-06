@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8'/>
+	<title>繁花似锦</title>
+	<meta name='viewport' content='width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no'/>
+	<meta name='apple-mobile-web-app-capable' content='yes' />
+	<meta name='full-screen' content='true' />
+	<meta name='screen-orientation' content='portrait' />
+	<meta name='x5-fullscreen' content='true' />
+	<meta name='360-fullscreen' content='true' />
+	<meta http-equiv='expires' content='0' />
+	<meta name='laya' logoimg='logo.png' logobkcolor='#ffffff' screenorientation='landscape' cacheid='fffffffff'/>
+</head>
+<body style='margin:0;overflow:none;overflow-x:hidden;overflow-y:hidden;background-color:#000;'>
+	<!-- Protobuf -->
+	<!--<script type="text/javascript" src="libs/bytebuffer.js"></script>
+	<script type="text/javascript" src="libs/protobuf.js"></script>-->
+	
+	<!--这里是layaAir的类库模块标签,核心库laya.core.js在最前-->
+	<script type="text/javascript" src="libs/laya.core.js"></script>
+	<script type="text/javascript" src="libs/laya.webgl.js"></script>
+	<script type="text/javascript" src="libs/laya.ani.js"></script>
+	<script type="text/javascript" src="libs/laya.filter.js"></script>
+	<script type="text/javascript" src="libs/laya.html.js"></script>
+	<script type="text/javascript" src="libs/laya.particle.js"></script>
+	<script type="text/javascript" src="libs/laya.tiledmap.js"></script>
+	<script type="text/javascript" src="libs/laya.ui.js"></script>
+
+	<!-- 物理引擎matter.js -->
+	<script type="text/javascript" src="libs/matter.js"></script>
+	<script type="text/javascript" src="libs/matter-RenderLaya.js"></script>
+	<script src="../src/ui/layaUI.max.all.js"></script>
+	<!--自定义的js(bin/js文件夹下)文件自动添加到下面jsfile模块标签里面里，js的顺序可以手动修改，修改后保留修改的顺序，新增加的js会默认依次追加到标签里-->
+	<!--删除标签，ide不会自动添加js文件，请谨慎操作-->
+	<!--jsfile--startTag-->
+	<!-- Library -->
+	<script src="../src/Library/EventDispatcher/EventDispatcher.js"></script>
+	<script src="../src/Library/EventDispatcher/EventDispatcherHang.js"></script>
+	<script src="../src/Library/Class.js"></script>
+	<script src="../src/Library/LCG.js"></script>
+	<script src="../src/Library/Page.js"></script>
+	<script src="../src/Library/Probability.js"></script>
+	<!-- Utils -->
+	<script src="../src/Utils/Action.js"></script>
+	<script src="../src/Utils/LayaEx.js"></script>
+	<script src="../src/Utils/UI.js"></script>
+	<script src="../src/Utils/UIDEFINE.js"></script>
+	<!-- Data -->
+	<script src="../src/Data/audio_tplt.js"></script>
+	<script src="../src/Data/core_data_tplt_list.js"></script>
+	<script src="../src/Data/core_map_config.js"></script>
+	<script src="../src/Data/drop_tplt.js"></script>
+	<script src="../src/Data/effect_tplt.js"></script>
+	<script src="../src/Data/level_tplt.js"></script>
+	<script src="../src/Data/map_tplt.js"></script>
+	<!-- Model -->
+	<script src="../src/Model/AudioModel.js"></script>
+	<script src="../src/Model/DataModel.js"></script>
+	<script src="../src/Model/DataTB.js"></script>
+	<script src="../src/Model/EnumDef.js"></script>
+	<script src="../src/Model/EventDef.js"></script>
+	<!-- Core -->
+	<script src="../src/Core/Board.js"></script>
+	<script src="../src/Core/Component.js"></script>
+	<script src="../src/Core/ComponentMap.js"></script>
+	<script src="../src/Core/ComponentView.js"></script>
+	<script src="../src/Core/Controller.js"></script>
+	<script src="../src/Core/ControllerClear.js"></script>
+	<script src="../src/Core/ControllerDrop.js"></script>
+	<script src="../src/Core/ControllerGain.js"></script>
+	<script src="../src/Core/ControllerMinimap.js"></script>
+	<script src="../src/Core/CoreAlgorithm.js"></script>
+	<script src="../src/Core/CoreDef.js"></script>
+	<script src="../src/Core/Element.js"></script>
+	<script src="../src/Core/Grid.js"></script>
+	<!-- UILayer -->
+	<script src="../src/UILayer/ItemClear.js"></script>
+	<script src="../src/UILayer/UIAuto.js"></script>
+	<script src="../src/UILayer/UIGame.js"></script>
+	<script src="../src/UILayer/UIGameDes.js"></script>
+	<script src="../src/UILayer/UIGamePlayDes.js"></script>
+	<script src="../src/UILayer/UIGM.js"></script>
+	<script src="../src/UILayer/UILevelDes.js"></script>
+	<script src="../src/UILayer/UILevelUp.js"></script>
+	<script src="../src/UILayer/UINewGuide.js"></script>
+	<script src="../src/UILayer/UIOriTip.js"></script>
+	<script src="../src/UILayer/UIPrompt.js"></script>
+	<script src="../src/UILayer/UIResLoading.js"></script>
+	<script src="../src/UILayer/UISetUp.js"></script>
+	<!-- src -->
+	<script src="../src/ResourceConfig.js"></script>
+	<script src="../src/ResourceLoader.js"></script>
+	<script src="../src/Global.js"></script>
+	<script src="../src/Game.js"></script>
+	<script src="../src/Main.js"></script>
+	<!--jsfile--endTag-->
+	<!-- 屏幕旋转监听-->
+	<script>window.addEventListener("orientationchange",function(){ 
+				if(window.orientation == 0 ){
+					UIOriTip.close();
+				}else{
+					UIOriTip.openFront(true, true, true);
+				}
+			});
+	</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+ui_bonus02_1（空瓶）
+ui_bonus02_2_sheng（一阶蝴蝶点亮）
+ui_bonus02_2_jiang（一阶蝴蝶消退）
+ui_bonus02_3_sheng（二阶蝴蝶点亮）
+ui_bonus02_3_jiang（二阶蝴蝶消退）
+ui_bonus02_4_sheng（三阶蝴蝶点亮）
+ui_bonus02_4_jiang（三阶蝴蝶消退）
+ui_bonus02_5_sheng（四阶蝴蝶，砖石点亮）
+ui_bonus02_5_xunhuan（砖石发光循环）
+ui_bonus02_5_jiang（四阶蝴蝶，砖石消退）

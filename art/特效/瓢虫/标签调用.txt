@@ -1,0 +1,5 @@
+ladybird_01(飞行)
+ladybird_02(飞行过度到待机)
+ladybird_03(待机1移动调用该动作调整线路)
+ladybird_04(待机2)
+ladybird_05(待机过度到飞行)

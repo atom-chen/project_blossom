@@ -1,0 +1,3 @@
+bouns_01_hint(精彩时刻)
+bouns_02_hint(免费奖励)
+bouns_03_hint(好运来临)
